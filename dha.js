@@ -3061,7 +3061,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
                    case 'amongus':
                    case 'anjing':
                    reply(mess.wait)
-                   anu = await getBuffer(`http://api.lolhuman.xyz/api/sticker/${command}?apikey=${lolhum}`)
+                   anu = await getBuffer(`http://api.lolhuman.xyz/api/sticker/${command}?apikey=najisbaperanRw`)
                     dha.sendMessage(from, anu, sticker, { quoted : ftoko })
                     break
        case 'telesticker': 
