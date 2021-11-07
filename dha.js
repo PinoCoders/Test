@@ -977,7 +977,7 @@ STICKER MENU
 *=> ${prefix}bucinstick*
 *=> ${prefix}semoji* _emoji_
 *=> ${prefix}sticker* _reply foto/video_
-*=> ${prefix}amongus
+*=> ${prefix}amongus*
 *=> ${prefix}swm* _pack|author_
 *=> ${prefix}take* _pack|author_
 
@@ -1141,7 +1141,7 @@ _NOTE: FITUR MASIH TAHAP PENGEMBANGAN_`
                 break
         case 'command':
                list = []
-               listmenu = [`groupmenu`,`wibumenu`,`stickermenu`,`islammenu`,`ceritamenu`,`makermenu`,`dewasamenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`toolsmenu`]
+               listmenu = [`buttongc`,`buttonwibu`,`buttonstik`,`islammenu`,`ceritamenu`,`makermenu`,`dewasamenu`,`buttonown`,`buttongame`,`funmenu`,`buttondl`,`infomenu`,`othermenu`,`toolsmenu`]
                listmenuu = [`Menu Group`,`Wibu Menu`,`Sticker Menu`,`Islam Menu`,`Cerita Menu`,`Maker Menu`,`Dewasa Menu`,`Owner Menu`,`Game Menu`,`Fun Menu`,`Downloader`,`Info Menu`,`MenuLainnya`,`Tools Menu`]
                nombor = 1
                startnum = 0
@@ -1737,7 +1737,7 @@ case 'buttonstik':
 *=> ${prefix}bucinstick*
 *=> ${prefix}semoji* _emoji_
 *=> ${prefix}sticker* _reply foto/video_
-*=> ${prefix}amongus
+*=> ${prefix}amongus*
 *=> ${prefix}swm* _pack|author_
 *=> ${prefix}take* _pack|author_`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
@@ -1770,7 +1770,7 @@ case 'buttonpen':
 case 'buttongame':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GAME MENU」*
-き⃟🦈 ${prefix}limitgame*
+*=> ${prefix}limitgame*
 *=> ${prefix}slot*
 *=> ${prefix}gelud* _@tag_
 *=> ${prefix}tictactoe* _@tag_
@@ -1797,6 +1797,8 @@ case 'buttongc':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GRUP MENU」*
 *=> ${prefix}groupsetting*
+*=> ${prefix}antilink*
+*=> ${prefix}welcome*
 *=> ${prefix}getbio* _reply_
 *=> ${prefix}afk* _alasan_
 *=> ${prefix}kontak* _nomor|nama_
@@ -1828,7 +1830,6 @@ case 'buttonwibu':
 *=> ${prefix}loli*
 *=> ${prefix}manga*
 *=> ${prefix}anime*
-*=> ${prefix}lolivideo*
 *=> ${prefix}husbu*
 *=> ${prefix}waifu*
 *=> ${prefix}milf*
@@ -4454,7 +4455,7 @@ case 'caripesan':  //by ANU TEAM
        case 'cekapikey':
               if (args.length < 1) return reply(`Ketik ${prefix}lolkey [Apikeynya]`) 
               anu = await fetchJson(`https://api.lolhuman.xyz/api/checkapikey?apikey=${q}`)
-              teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = https://lolhuman.herokuapp.com`
+              teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = https://api.lolhuman.xyz/`
               dha.sendMessage(from, teks, text, {quoted: troli})
               break
        case 'bugreport':
@@ -4590,9 +4591,25 @@ case 'horor':
                     episode = quotes.episode
                     reply(`_${quote}_\n\n*― ${char}*\n*― ${anime} ${episode}*`)
                     break
-case 'quotesdilan':
+case 'dilan':
                     quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=najisbaperanRw`)
                     reply(quotedilan.result)
+                    break   
+case 'ilham':
+                    katailham = await fetchJson(`https://psyco-api.herokuapp.com/api/random/katailham?apikey=GratisanMuluAnjing`)
+                    reply(katailham.result)
+                    break   
+case 'sadboy':
+                    mengsad = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesad?apikey=GratisanMuluAnjing`)
+                    reply(mengsad.result)
+                    break   
+case 'maker':
+                    mengker = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesmaker?apikey=GratisanMuluAnjing`)
+                    reply(mengker.result)
+                    break   
+case 'islam':
+                    islam = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesislami?apikey=GratisanMuluAnjing`)
+                    reply(islam.result)
                     break   
                case 'faktaunik':
                 case 'katabijak':
@@ -4905,6 +4922,10 @@ if (budy.includes(`bot`)) {
                     dha.sendMessage(from, ya, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
                     }
 if (budy.includes(`tolol`)) {
+                  const ya = fs.readFileSync('media/soundnya/IhOmKasar.ogg')
+                    dha.sendMessage(from, ya, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
+                    }
+if (budy.includes(`anjc`)) {
                   const ya = fs.readFileSync('media/soundnya/IhOmKasar.ogg')
                     dha.sendMessage(from, ya, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
                     }
