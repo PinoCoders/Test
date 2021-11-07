@@ -971,13 +971,13 @@ STICKER MENU
 *=> ${prefix}attp* _teks_
 *=> ${prefix}ttp* _teks_
 *=> ${prefix}dadu*
-*=> ${prefix}doge*
+*=> ${prefix}anjing*
 *=> ${prefix}patrick*
-*=> ${prefix}gura*
-*=> ${prefix}stickeranime*
+*=> ${prefix}gawrgura*
+*=> ${prefix}bucinstick*
 *=> ${prefix}semoji* _emoji_
 *=> ${prefix}sticker* _reply foto/video_
-*=> ${prefix}smeme* _teks|teks_
+*=> ${prefix}amongus
 *=> ${prefix}swm* _pack|author_
 *=> ${prefix}take* _pack|author_
 
@@ -1087,6 +1087,7 @@ OTHER MENU
 *=> ${prefix}pinterest* _query_
 *=> ${prefix}translate*
 *=> ${prefix}kbbi*
+*=> ${prefix}jadibot*
 *=> ${prefix}lolkey*
 *=> ${prefix}covidindo*
 *=> ${prefix}covidglobal*
@@ -1730,13 +1731,13 @@ case 'buttonstik':
 *=> ${prefix}attp* _teks_
 *=> ${prefix}ttp* _teks_
 *=> ${prefix}dadu*
-*=> ${prefix}doge*
+*=> ${prefix}anjing*
 *=> ${prefix}patrick*
-*=> ${prefix}gura*
-*=> ${prefix}stickeranime*
+*=> ${prefix}gawrgura*
+*=> ${prefix}bucinstick*
 *=> ${prefix}semoji* _emoji_
 *=> ${prefix}sticker* _reply foto/video_
-*=> ${prefix}smeme* _teks|teks_
+*=> ${prefix}amongus
 *=> ${prefix}swm* _pack|author_
 *=> ${prefix}take* _pack|author_`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
@@ -3063,19 +3064,6 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
                    anu = await getBuffer(`http://api.lolhuman.xyz/api/sticker/${command}?apikey=${lolhum}`)
                     dha.sendMessage(from, anu, sticker, { quoted : ftoko })
                     break
-                    
-       case 'animestick':
-       case 'stickeranime':
-              reply(mess.wait)
-              fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/animestick')
-             .then(res => res.text())
-             .then(body => {
-              let todd = body.split("\n");
-              let pjrr = todd[Math.floor(Math.random() * todd.length)];
-              sendWebp(from, pjrr)
-}
-)
-              break
        case 'telesticker': 
        case 'telestiker':
               if (!q) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
@@ -3696,8 +3684,9 @@ case 'pubg':
 4125 💵 Rp 672,000
 *_JIKA MINAT KETIK ${prefix}masukandata_*`)
               break
-      case 'jadibot':
-      reply(` Gak Bisa Jadi Bot?, Nih Tinggal Scan Qr Di Link Di Bawah\nhttps://my-bots-waa.herokuapp.com/`)
+           case 'jadibot':
+      reply(` Gak Bisa Jadi Bot?, Nih Tinggal Scan Qr Di Link Bawah\nhttps://my-bots-waa.herokuapp.com/`)
+      break
       case 'ping':
       case 'speed':
               timestampe = speed();
@@ -4877,8 +4866,8 @@ default:
 //ini sound PsycoBOTZ
 //kalo mau ambil kasih creatornya lah jancok
 if (budy.includes(`Assalamualaikum`)) {
-                  const salam = fs.readFileSync('media/soundnya/waalaikumsalam.mp3')
-                    srart.sendMessage(from, salam, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
+                  const salam = fs.readFileSync('media/soundnya/WaalaikumsalamSayang.ogg')
+                    dha.sendMessage(from, salam, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
                     }
  
  if (budy.includes(`assalamualaikum`)) {
@@ -4903,12 +4892,12 @@ if (budy.includes(`Assalamualaikum`)) {
 
 if (budy.includes(`Bot`)) {
                   const bot = fs.readFileSync('media/soundnya/ApaSayang.ogg')
-                    dha.sendMessage(from, ara, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
+                    dha.sendMessage(from, bot, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
                     }
                     
 if (budy.includes(`bot`)) {
                   const bot = fs.readFileSync('media/soundnya/ApaSayang.ogg')
-                    dha.sendMessage(from, ara, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
+                    dha.sendMessage(from, bot, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
                     }
 
  if (budy.includes(`bangsat`)) {
