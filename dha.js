@@ -1049,9 +1049,8 @@ WIBU MENU
 KATA MENU
 *=> ${prefix}quotes*
 *=> ${prefix}quotesanime*
-*=> ${prefix}quotesanime*
-*=> ${prefix}quotesdilan* 
 *=> ${prefix}faktaunik* 
+*=> ${prefix}pantun* 
 
 OWNER MENU
 *=> ${prefix}bc* _teks_
@@ -4591,26 +4590,6 @@ case 'horor':
                     episode = quotes.episode
                     reply(`_${quote}_\n\n*― ${char}*\n*― ${anime} ${episode}*`)
                     break
-case 'dilan':
-                    quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=najisbaperanRw`)
-                    reply(quotedilan.result)
-                    break   
-case 'ilham':
-                    katailham = await fetchJson(`https://psyco-api.herokuapp.com/api/random/katailham?apikey=GratisanMuluAnjing`)
-                    reply(katailham.result)
-                    break   
-case 'sadboy':
-                    mengsad = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesad?apikey=GratisanMuluAnjing`)
-                    reply(mengsad.result)
-                    break   
-case 'maker':
-                    mengker = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesmaker?apikey=GratisanMuluAnjing`)
-                    reply(mengker.result)
-                    break   
-case 'islam':
-                    islam = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesislami?apikey=GratisanMuluAnjing`)
-                    reply(islam.result)
-                    break   
                case 'faktaunik':
                 case 'katabijak':
                 case 'pantun':
